@@ -1,0 +1,2 @@
+HapticsServer.exe localhost
+pause
