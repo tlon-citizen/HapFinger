@@ -1,7 +1,12 @@
 # HapFinger
 <b>Vibrotactile Fingercap for Wireless Tabletop/3D Interaction</b>
 
-This haptic device provides feedback with an LRA motor spinning at a resonant frequency of  200Hz  while variating the intensity from  level 0 to 128, and controlled by a dedicated haptic driver supporting overdriving and active braking. The device can also be configured to provide different vibrotactile patterns according to the task in execution. It is also possible to attach an IR marker and enable position tracking with external cameras and use the pressure sensure in the fingertip to design tabletop-based interaction techniques. As additional input, the device features two tactile buttons and an analog joystick wich can be easily accesed with the thumb.
+
+HapFinger is a fingertip-worn wireless (Bluetooth 2.4 GHz Band) device to be used in the index finger.
+A vibrating element is located right at the fingertip and is controlled by embedded software that controls the intensity according to signals received from the computer. The case encloses an RF51822 SoC (System on a Chip) based on a 32-bit ARM Cortex.
+The device provides feedback with a Linear Resonant Actuator (LRA, $5mm$ diameter $\times$ $3mm$ thickness, Precision Microdrives C10-100) spinning at a resonant frequency of 200Hz while variating the intensity from level 0 to 128 and controlled by a dedicated haptic driver (TI DRV2605L) and supporting overdriving and active braking.
+It is also possible to attach an IR marker and enable position tracking with external cameras and use the pressure sensure in the fingertip to design tabletop-based interaction techniques. As additional input, the device features two tactile buttons and an analog joystick wich can be easily accesed with the thumb.
+The device was 3d modeled as a finger contoured electronic enclosure. The device case was 3d-printed with resin material and the total weight, including the battery, is 31 grams.
 
 <p align="center"><img src="Media/device.png" width="50%"></p>
 
@@ -9,8 +14,7 @@ This repository contains all the necessary files to build a new device; model fi
 
 <p align="center"><img src="Media/app.png" width="50%"></p>
 
-The demo application requires a LeapMotion device to track the position of the hand and provide vibrotactile feedback whenever the index fingertip touches the objects in the 3D scene; the intensity of the feedback depends on the material properties (👉⬛️).
-
-<p align="center"><img src="Media/touchscreen.png" width="50%"></p>
-
-The device can also be used for touchscreen/tabletop interactions as can bee depicted above (HapRing, also built in our Lab); the vibrotactile feedback can be changed dinamically, according to the visual texture being touch on the screen.
+Analysis of Proximity-Based Multimodal Feedback for 3D Selection in Immersive Virtual Environments<br/>
+Oscar Ariza, Gerd Bruder, Nicholas Katzakis, Frank Steinicke<br/>
+IEEE Virtual Reality (VR)<br/>
+2018
